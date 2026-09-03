@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./img/javascript-logo.png" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panorama Panels | Event Listeners</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-header">
+      <h1 id="page-title">Event Listeners</h1>
+      <nav class="page-nav" aria-label="Demo pages">
+        <a href="./index.html">Core Samples</a>
+        <a href="./panorama.html" aria-current="page">Panorama Panels</a>
+      </nav>
+    </div>
+    <p class="tagline">Hover over a panel to join the panorama and reveal the credit.</p>
+  </header>
+
+  <main>
+    <section class="panorama-section">
+      <h2 id="sec-panorama">Panorama Panels</h2>
+      <div id="panorama" class="panorama" aria-label="Five-panel mountain panorama">
+        <span class="panorama-panel panel-1" role="img" aria-label="Left edge of a mountain panorama"></span>
+        <span class="panorama-panel panel-2" role="img" aria-label="Left-center panel of a mountain panorama"></span>
+        <span class="panorama-panel panel-3" role="img" aria-label="Center panel of a mountain panorama"></span>
+        <span class="panorama-panel panel-4" role="img" aria-label="Right-center panel of a mountain panorama"></span>
+        <span class="panorama-panel panel-5" role="img" aria-label="Right edge of a mountain panorama"></span>
+      </div>
+      <p id="panorama-status" class="output">Panorama: separated panels</p>
+      <p id="panorama-credit" class="panorama-credit" hidden>
+        Photo by
+        <a href="https://unsplash.com/@jeanbrochard" target="_blank" rel="noopener noreferrer">Jean Brochard</a>
+        on
+        <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small id="footer-note">&copy;2026 SDEV-1150</small>
+  </footer>
+</body>
+
+</html>

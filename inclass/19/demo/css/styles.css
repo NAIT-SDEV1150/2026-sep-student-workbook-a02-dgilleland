@@ -1,0 +1,144 @@
+:root {
+  --bg: #edf2f7;
+  --surface: #fff;
+  --text: #172033;
+  --muted: #5f6f84;
+  --border: #9aa8ba;
+  --accent: #1d4ed8;
+  --accent-dark: #173f9f;
+  --success: #0f766e;
+  --error: #b91c1c;
+  --soft-blue: #dbeafe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header,
+main {
+  max-width: 960px;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  color: var(--muted);
+}
+
+main {
+  display: grid;
+  gap: 1.25rem;
+}
+
+section {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+label {
+  display: grid;
+  gap: 0.25rem;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+button {
+  justify-self: start;
+  cursor: pointer;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+}
+
+button:hover {
+  background: var(--accent-dark);
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.status {
+  padding: 0.65rem 0.75rem;
+  border-radius: 6px;
+  background: var(--soft-blue);
+  color: var(--text);
+}
+
+.status[data-status="success"] {
+  color: var(--success);
+}
+
+.status[data-status="error"] {
+  color: var(--error);
+}
+
+.body-list {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.body-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #f8fafc;
+}
+
+.body-list img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #000;
+}

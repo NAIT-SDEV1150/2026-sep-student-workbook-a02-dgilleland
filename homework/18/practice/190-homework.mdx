@@ -1,0 +1,90 @@
+---
+title: Homework - Practice REST Requests
+description: Fallback practice for REST Client requests, HTTP methods, and status-code interpretation.
+sidebar:
+  label: 19 Homework
+draft: true
+---
+
+This homework should take about **45-75 minutes**.
+
+Class likely covered starting a local JSON server and sending a simple `GET`. This tutorial preserves the REST Client and non-GET request practice that may not fit in class.
+
+## Start the Homework Server
+
+Open `sk/19/homework/` and run the server command from its `package.json`.
+
+Then open `requests.http` in VS Code. Use the REST Client extension to send:
+
+```http
+GET http://localhost:3000/workshops
+```
+
+Expected response: a `200 OK` status and a JSON array of workshops.
+
+## Request One Resource
+
+Send:
+
+```http
+GET http://localhost:3000/workshops/1
+```
+
+Expected response: one workshop object. If the id does not exist, expect `404 Not Found`.
+
+## Add a POST Request
+
+Replace the TODO with:
+
+```http
+POST http://localhost:3000/workshops
+Content-Type: application/json
+
+{
+  "title": "Homework REST Lab",
+  "seats": 10
+}
+```
+
+Expected response: usually `201 Created` with the new object.
+
+## Add PATCH and DELETE Requests
+
+Use the id returned by your `POST`:
+
+```http
+PATCH http://localhost:3000/workshops/3
+Content-Type: application/json
+
+{
+  "seats": 12
+}
+```
+
+Then:
+
+```http
+DELETE http://localhost:3000/workshops/3
+```
+
+Expected behavior: `PATCH` returns the updated object, and `DELETE` removes it.
+
+## Summarize Status Codes
+
+Open `src/status-summary.js`, add at least two more status codes, and run:
+
+```ps
+node src/status-summary.js
+```
+
+## Shut Down and Troubleshoot
+
+When finished, stop the server with `Ctrl+C`. If requests fail, check that the server is still running, the port is `3000`, and the JSON in request bodies is valid.
+
+## Final Verification
+
+- The server responds to `GET /workshops`.
+- Your REST Client file includes `GET`, `POST`, `PATCH`, and `DELETE`.
+- You checked response status codes.
+- `node src/status-summary.js` runs without syntax errors.
+- You stopped the server when finished.

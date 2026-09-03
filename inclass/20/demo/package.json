@@ -1,0 +1,23 @@
+{
+  "name": "lesson-21-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Starter demo for SDEV-1150 Lesson 21: Consuming REST API Endpoints",
+  "scripts": {
+    "frontend": "vite",
+    "api-server": "json-server --watch db.json --port 3000 --static ./public",
+    "dev": "concurrently -n frontend,api-server -c blue,green \"pnpm run frontend\" \"pnpm run api-server\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "markdown-it": "14.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "9.2.1",
+    "json-server": "1.0.0-beta.15",
+    "vite": "8.0.13"
+  }
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 20 - Fetch API Calls</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Fetch API Calls</h1>
+    <p>Use browser JavaScript to load and add celestial bodies from a local API.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="add-body-title">
+      <h2 id="add-body-title">Add Body</h2>
+      <form id="add-body">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Proxima Centauri" required>
+        </label>
+
+        <label>
+          Category
+          <select name="category" required>
+            <option value="planet">planet</option>
+            <option value="dwarf planet">dwarf planet</option>
+            <option value="star">star</option>
+          </select>
+        </label>
+
+        <label>
+          Image filename
+          <input type="text" name="image" placeholder="sun.jpg" required>
+        </label>
+
+        <label>
+          Description
+          <textarea name="description" placeholder="The closest known star to the Sun." required></textarea>
+        </label>
+
+        <label>
+          Orbital period
+          <input type="text" name="orbitalPeriod" placeholder="Not applicable" required>
+        </label>
+
+        <button type="submit">Add Body</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="body-list-title">
+      <div class="section-heading">
+        <h2 id="body-list-title">Bodies</h2>
+        <button type="button" id="load-bodies">Load Bodies</button>
+      </div>
+
+      <p id="status-message" class="status" data-status="info">Waiting to load bodies.</p>
+      <ul id="body-list" class="body-list"></ul>
+    </section>
+  </main>
+</body>
+
+</html>

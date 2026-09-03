@@ -1,0 +1,90 @@
+---
+title: Homework - Practice Fetch Helpers
+description: Fallback practice for fetch helper functions, JSON parsing, rendering, and async/API errors.
+sidebar:
+  label: 20 Homework
+draft: true
+---
+
+This homework should take about **45-75 minutes**.
+
+Class likely covered the basic `fetch(...)` shape. This tutorial preserves the helper-function and rendering work that may not fit: a reusable fetch helper, app data rendering, an optional student exercise, and common async/API errors.
+
+## Start the API and App
+
+Open `sk/20/homework/`. Start the JSON server for `db.json`, then start the Vite app from the project scripts.
+
+Open the app URL and confirm the console shows:
+
+```txt
+Lesson 20 homework loaded
+```
+
+## Create a Fetch Helper
+
+In `src/main.js`, add:
+
+```js
+async function getJson(url) {
+  let response = await fetch(url);
+  let data = await response.json();
+  return data;
+}
+```
+
+Call it:
+
+```js
+let data = await getJson('http://localhost:3000/workshops');
+console.log(data);
+```
+
+Expected behavior: the console shows the workshops from `db.json`.
+
+## Render Workshop Data
+
+Set a loading message before the request:
+
+```js
+status.textContent = 'Loading workshops...';
+```
+
+Render cards after the request:
+
+```js
+workshops.innerHTML = data.map(function (workshop) {
+  return `<article><h2>${workshop.title}</h2><p>${workshop.seats} seats</p></article>`;
+}).join('');
+
+status.textContent = 'Workshops loaded';
+```
+
+Expected browser behavior: the page shows one card per workshop.
+
+## Handle Common Errors
+
+Wrap the request in `try`/`catch`:
+
+```js
+try {
+  let data = await getJson('http://localhost:3000/workshops');
+  // render here
+} catch (error) {
+  status.textContent = 'Could not load workshops.';
+  console.error(error);
+}
+```
+
+Test by stopping the JSON server and refreshing the page.
+
+## Optional Student Exercise
+
+Add a button that reloads the workshops when clicked, or render only workshops with at least 12 seats.
+
+## Final Verification
+
+- The JSON server and app both run.
+- Your `getJson(url)` helper returns parsed JSON.
+- The browser renders workshop data from the API.
+- Loading, success, and error states are visible.
+- You tested at least one common error, such as the server being stopped.

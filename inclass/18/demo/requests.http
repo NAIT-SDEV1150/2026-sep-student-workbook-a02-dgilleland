@@ -1,0 +1,24 @@
+# requests.http
+
+### GET all bodies
+GET http://localhost:3000/bodies
+Accept: application/json
+
+### GET one body
+# TODO: Send a GET request for body 1.
+
+### POST new body
+# TODO: Send a POST request to http://localhost:3000/bodies.
+# TODO: Include Content-Type: application/json.
+# TODO: Include a JSON body with name, category, image, description, nameOrigin, mass, radius, orbitalPeriod, and discoveryDate.
+
+### PUT replace a body
+# TODO: Send a PUT request for body 1.
+# TODO: Include a complete replacement body object.
+
+### PATCH update a body
+# TODO: Send a PATCH request for body 2.
+# TODO: Include only the field or fields you want to change.
+
+### DELETE a body
+# TODO: Send a DELETE request for body 3.

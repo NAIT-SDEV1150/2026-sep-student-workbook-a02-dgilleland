@@ -1,0 +1,107 @@
+---
+title: Homework - Practice Event Flow
+description: Fallback practice for mouse and keyboard events, event delegation, bubbling, and capturing.
+sidebar:
+  label: 16 Homework
+draft: true
+---
+
+This homework should take about **45-75 minutes**.
+
+Class likely covered one click listener. This tutorial preserves the broader event material that may not fit: mouse events, keyboard/input events, panel interactions, event delegation, bubbling, and capturing.
+
+## Start the Interaction Panel
+
+Open `sk/16/homework/` and run:
+
+```ps
+npm install
+npm run dev
+```
+
+Open the browser console. You should see:
+
+```txt
+Lesson 16 homework loaded
+```
+
+## Add a Click Listener
+
+```js
+let primaryAction = document.querySelector('#primary-action');
+
+primaryAction.addEventListener('click', function () {
+  status.textContent = 'Primary action clicked';
+});
+```
+
+Expected browser behavior: clicking the button changes the status text.
+
+## Add Mouse Events to a Panel
+
+```js
+let panel = document.querySelector('.panel');
+
+panel.addEventListener('mouseenter', function () {
+  panel.classList.add('is-active');
+});
+
+panel.addEventListener('mouseleave', function () {
+  panel.classList.remove('is-active');
+});
+```
+
+## Add Keyboard or Input Events
+
+```js
+let nameFilter = document.querySelector('#name-filter');
+
+nameFilter.addEventListener('input', function (event) {
+  status.textContent = `Filter: ${event.target.value}`;
+});
+```
+
+Expected behavior: typing updates the status without clicking a button.
+
+## Use Event Delegation
+
+Listen on the card list instead of every card:
+
+```js
+let cardList = document.querySelector('.card-list');
+
+cardList.addEventListener('click', function (event) {
+  let card = event.target.closest('.card');
+
+  if (card === null) {
+    return;
+  }
+
+  status.textContent = `Selected ${card.dataset.name}`;
+});
+```
+
+## Compare Bubbling and Capturing
+
+Add one listener with the default bubbling phase and one with capture:
+
+```js
+document.body.addEventListener('click', function () {
+  console.log('body bubble');
+});
+
+document.body.addEventListener('click', function () {
+  console.log('body capture');
+}, true);
+```
+
+Expected behavior: the console logs help you see the event path.
+
+## Final Verification
+
+- `npm run dev` starts the project.
+- Clicking the primary action updates the status.
+- Mouse enter/leave changes the panel.
+- Typing in the filter changes the status.
+- Card clicks are handled through event delegation.
+- The console shows both bubbling and capturing logs.

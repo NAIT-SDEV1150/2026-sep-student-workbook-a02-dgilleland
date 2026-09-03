@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 17 Homework</title>
+  </head>
+  <body>
+    <main>
+      <h1>Workshop Signup</h1>
+      <form id="signup-form">
+        <label>
+          Name
+          <input name="studentName" required minlength="2">
+        </label>
+        <label>
+          Seats
+          <input name="seats" type="number" min="1" max="4" required>
+        </label>
+        <button>Submit</button>
+      </form>
+      <p id="message"></p>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

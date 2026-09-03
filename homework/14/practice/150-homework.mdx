@@ -1,0 +1,101 @@
+---
+title: Homework - Practice DOM Creation and Navigation
+description: Fallback practice for DOM navigation, creating nodes, replacing/removing elements, and fragments.
+sidebar:
+  label: 15 Homework
+draft: true
+---
+
+This homework should take about **45-75 minutes**.
+
+Class likely covered selecting existing DOM nodes and changing them. This tutorial preserves the creation and structural DOM methods that may not fit in class: navigation, text nodes, image insertion, replace/remove, and document fragments.
+
+## Start the Learning Resource List
+
+Open `sk/15/homework/` and run:
+
+```ps
+npm install
+npm run dev
+```
+
+Open the page and browser console. You should see:
+
+```txt
+Lesson 15 homework loaded
+```
+
+## Navigate from an Existing Node
+
+Use the starter selections:
+
+```js
+console.log(topicList.parentElement);
+console.log(topicList.children.length);
+```
+
+Expected behavior: the console helps you see where the list sits inside the page.
+
+## Create Text and Elements
+
+Create a short note:
+
+```js
+let note = document.createElement('p');
+let noteText = document.createTextNode('Choose one resource to review before the next class.');
+note.append(noteText);
+workspace.append(note);
+```
+
+Expected browser behavior: the new paragraph appears in the workspace.
+
+## Insert an Image
+
+Create and append an image:
+
+```js
+let image = document.createElement('img');
+image.src = 'https://placehold.co/640x360?text=Learning+Resource';
+image.alt = 'Learning resource preview';
+workspace.append(image);
+```
+
+## Replace and Remove Nodes
+
+Replace `.placeholder`:
+
+```js
+let placeholder = document.querySelector('.placeholder');
+let replacement = document.createElement('strong');
+replacement.textContent = 'Resource list ready';
+placeholder.replaceWith(replacement);
+```
+
+Remove `.remove-me`:
+
+```js
+document.querySelector('.remove-me').remove();
+```
+
+## Add Several Items with a Fragment
+
+```js
+let fragment = document.createDocumentFragment();
+
+for (let title of ['MDN arrays', 'DOM selection', 'Event basics']) {
+  let item = document.createElement('li');
+  item.textContent = title;
+  fragment.append(item);
+}
+
+topicList.append(fragment);
+```
+
+## Final Verification
+
+- `npm run dev` starts the project.
+- You navigated from one DOM node to another.
+- You created an element and a text node.
+- You inserted an image with `alt` text.
+- You replaced one node and removed another.
+- You used a `DocumentFragment` to append multiple list items.

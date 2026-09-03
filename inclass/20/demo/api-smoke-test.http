@@ -1,0 +1,19 @@
+### GET all books
+GET http://localhost:3000/books
+Accept: application/json
+
+### GET all authors
+GET http://localhost:3000/authors
+Accept: application/json
+
+### GET all reviews
+GET http://localhost:3000/reviews
+Accept: application/json
+
+### GET one markdown summary
+GET http://localhost:3000/summaries/orbiting-javascript.md
+Accept: text/markdown
+
+### GET one jacket image
+GET http://localhost:3000/jackets/orbiting-javascript.svg
+Accept: image/svg+xml

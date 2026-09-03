@@ -1,0 +1,17 @@
+GET http://localhost:3000/workshops
+
+###
+
+GET http://localhost:3000/workshops/1
+
+###
+
+# TODO: Add a POST request.
+
+###
+
+# TODO: Add a PATCH request.
+
+###
+
+# TODO: Add a DELETE request.

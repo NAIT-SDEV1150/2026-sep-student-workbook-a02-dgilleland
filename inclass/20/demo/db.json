@@ -1,0 +1,71 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Orbiting JavaScript",
+      "authorId": "a1",
+      "year": 2026,
+      "genre": "Programming",
+      "summaryPath": "/summaries/orbiting-javascript.md",
+      "jacketPath": "/jackets/orbiting-javascript.svg"
+    },
+    {
+      "id": "2",
+      "title": "The Event Loop Field Guide",
+      "authorId": "a2",
+      "year": 2025,
+      "genre": "Web Development",
+      "summaryPath": "/summaries/event-loop-field-guide.md",
+      "jacketPath": "/jackets/event-loop-field-guide.svg"
+    },
+    {
+      "id": "3",
+      "title": "Forms, Fetch, and Futures",
+      "authorId": "a3",
+      "year": 2024,
+      "genre": "Application Design",
+      "summaryPath": "/summaries/forms-fetch-futures.md",
+      "jacketPath": "/jackets/forms-fetch-futures.svg"
+    }
+  ],
+  "authors": [
+    {
+      "id": "a1",
+      "name": "Mira Chen",
+      "bio": "Writes practical guides for new web developers."
+    },
+    {
+      "id": "a2",
+      "name": "Sam Rivera",
+      "bio": "Explains browser behavior with small, testable examples."
+    },
+    {
+      "id": "a3",
+      "name": "Noor Patel",
+      "bio": "Builds demos about forms, data, and user feedback."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "bookId": 1,
+      "reviewer": "Jordan",
+      "rating": 5,
+      "comment": "Clear examples and a useful pace."
+    },
+    {
+      "id": "r2",
+      "bookId": 1,
+      "reviewer": "Avery",
+      "rating": 4,
+      "comment": "The API chapter made fetch feel less mysterious."
+    },
+    {
+      "id": "r3",
+      "bookId": 2,
+      "reviewer": "Taylor",
+      "rating": 5,
+      "comment": "The diagrams helped me understand async code."
+    }
+  ]
+}

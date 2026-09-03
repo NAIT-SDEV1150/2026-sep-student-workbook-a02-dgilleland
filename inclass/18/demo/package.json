@@ -1,0 +1,13 @@
+{
+  "name": "lesson-19-demo",
+  "version": "1.0.0",
+  "description": "Starter demo for SDEV-1150 Lesson 19: HTTP and Server-Side Endpoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0"
+}

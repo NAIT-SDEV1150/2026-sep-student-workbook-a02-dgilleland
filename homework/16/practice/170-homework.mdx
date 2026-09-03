@@ -1,0 +1,83 @@
+---
+title: Homework - Practice Form Validation
+description: Fallback practice for validation-focused form event handling.
+sidebar:
+  label: 17 Homework
+draft: true
+---
+
+This homework should take about **45-75 minutes**.
+
+Class likely covered listening for `submit` and preventing the default page reload. This tutorial preserves the validation API work that may not fit: built-in validation, custom validation, `setCustomValidity()`, `checkValidity()`, and `reportValidity()`.
+
+## Start the Signup Form
+
+Open `sk/17/homework/` and run:
+
+```ps
+npm install
+npm run dev
+```
+
+Open the page and browser console. You should see:
+
+```txt
+Lesson 17 homework loaded
+```
+
+## Check Built-In Validity
+
+Inside the existing submit listener, start with:
+
+```js
+if (!form.checkValidity()) {
+  form.reportValidity();
+  return;
+}
+```
+
+Expected behavior: required fields or invalid browser constraints are reported before your success message runs.
+
+## Read Form Values
+
+```js
+let formData = new FormData(form);
+let studentName = formData.get('studentName');
+let seats = Number(formData.get('seats'));
+```
+
+Log both values so you can confirm names match the form controls.
+
+## Add Custom Validation
+
+Select the seats field:
+
+```js
+let seatsInput = form.querySelector('[name="seats"]');
+seatsInput.setCustomValidity('');
+
+if (seats > 4) {
+  seatsInput.setCustomValidity('You can reserve at most 4 seats.');
+  seatsInput.reportValidity();
+  return;
+}
+```
+
+Expected behavior: entering a value above the limit shows your custom message.
+
+## Show Success
+
+After validation passes:
+
+```js
+message.textContent = `${studentName} reserved ${seats} seat(s).`;
+```
+
+## Final Verification
+
+- `npm run dev` starts the project.
+- Empty required fields trigger built-in validation.
+- `form.checkValidity()` is used before success output.
+- `setCustomValidity()` creates a custom error.
+- `reportValidity()` displays validation feedback.
+- A valid submission updates the page message.

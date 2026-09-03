@@ -1,0 +1,172 @@
+{
+  "bodies": [
+    {
+      "id": "1",
+      "name": "Sun",
+      "category": "star",
+      "image": "sun.jpg",
+      "description": "The star at the center of our solar system.",
+      "nameOrigin": "Comes from Old English words for the Sun.",
+      "mass": "1.989 x 10^30 kg",
+      "radius": "695,700 km",
+      "orbitalPeriod": "Not applicable",
+      "discoveryDate": "Known since antiquity"
+    },
+    {
+      "id": "2",
+      "name": "Mercury",
+      "category": "planet",
+      "image": "mercury.jpg",
+      "description": "The smallest planet and the closest planet to the Sun.",
+      "nameOrigin": "Named for the swift Roman messenger god.",
+      "mass": "3.301 x 10^23 kg",
+      "radius": "2,440 km",
+      "orbitalPeriod": "88 Earth days",
+      "discoveryDate": "Known since antiquity"
+    },
+    {
+      "id": "3",
+      "name": "Venus",
+      "category": "planet",
+      "image": "venus.jpg",
+      "description": "A rocky planet with a thick atmosphere and extremely hot surface.",
+      "nameOrigin": "Named for the Roman goddess of love and beauty.",
+      "mass": "4.867 x 10^24 kg",
+      "radius": "6,052 km",
+      "orbitalPeriod": "224.7 Earth days",
+      "discoveryDate": "Known since antiquity"
+    },
+    {
+      "id": "4",
+      "name": "Earth",
+      "category": "planet",
+      "image": "earth.jpg",
+      "description": "Our home planet and the only known world with life.",
+      "nameOrigin": "Comes from Old English and Germanic words for ground or soil.",
+      "mass": "5.972 x 10^24 kg",
+      "radius": "6,371 km",
+      "orbitalPeriod": "365.25 Earth days",
+      "discoveryDate": "Known since antiquity"
+    },
+    {
+      "id": "5",
+      "name": "Mars",
+      "category": "planet",
+      "image": "mars.jpg",
+      "description": "A rocky planet often called the Red Planet.",
+      "nameOrigin": "Named for the Roman god of war.",
+      "mass": "6.417 x 10^23 kg",
+      "radius": "3,390 km",
+      "orbitalPeriod": "687 Earth days",
+      "discoveryDate": "Known since antiquity"
+    },
+    {
+      "id": "6",
+      "name": "Jupiter",
+      "category": "planet",
+      "image": "jupiter.jpg",
+      "description": "The largest planet in the solar system and a gas giant.",
+      "nameOrigin": "Named for the king of the Roman gods.",
+      "mass": "1.898 x 10^27 kg",
+      "radius": "69,911 km",
+      "orbitalPeriod": "11.86 Earth years",
+      "discoveryDate": "Known since antiquity"
+    },
+    {
+      "id": "7",
+      "name": "Saturn",
+      "category": "planet",
+      "image": "saturn.jpg",
+      "description": "A gas giant known for its bright ring system.",
+      "nameOrigin": "Named for the Roman god of agriculture and time.",
+      "mass": "5.683 x 10^26 kg",
+      "radius": "58,232 km",
+      "orbitalPeriod": "29.45 Earth years",
+      "discoveryDate": "Known since antiquity"
+    },
+    {
+      "id": "8",
+      "name": "Uranus",
+      "category": "planet",
+      "image": "uranus.jpg",
+      "description": "An ice giant that rotates on its side.",
+      "nameOrigin": "Named for the Greek god of the sky.",
+      "mass": "8.681 x 10^25 kg",
+      "radius": "25,362 km",
+      "orbitalPeriod": "84 Earth years",
+      "discoveryDate": "March 13, 1781"
+    },
+    {
+      "id": "9",
+      "name": "Neptune",
+      "category": "planet",
+      "image": "neptune.jpg",
+      "description": "A distant ice giant with strong winds and a deep blue color.",
+      "nameOrigin": "Named for the Roman god of the sea.",
+      "mass": "1.024 x 10^26 kg",
+      "radius": "24,622 km",
+      "orbitalPeriod": "164.8 Earth years",
+      "discoveryDate": "September 23, 1846"
+    },
+    {
+      "id": "10",
+      "name": "Ceres",
+      "category": "dwarf planet",
+      "image": "ceres.jpg",
+      "description": "The largest object in the asteroid belt and the closest dwarf planet to the Sun.",
+      "nameOrigin": "Named for the Roman goddess of agriculture.",
+      "mass": "9.39 x 10^20 kg",
+      "radius": "476 km",
+      "orbitalPeriod": "4.6 Earth years",
+      "discoveryDate": "January 1, 1801"
+    },
+    {
+      "id": "11",
+      "name": "Pluto",
+      "category": "dwarf planet",
+      "image": "pluto.jpg",
+      "description": "A distant dwarf planet in the Kuiper Belt.",
+      "nameOrigin": "Named for the Roman god of the underworld.",
+      "mass": "1.309 x 10^22 kg",
+      "radius": "1,188 km",
+      "orbitalPeriod": "248 Earth years",
+      "discoveryDate": "February 18, 1930"
+    },
+    {
+      "id": "12",
+      "name": "Haumea",
+      "category": "dwarf planet",
+      "image": "haumea.jpg",
+      "description": "A fast-spinning dwarf planet in the Kuiper Belt.",
+      "nameOrigin": "Named for the Hawaiian goddess of fertility and childbirth.",
+      "mass": "4.006 x 10^21 kg",
+      "radius": "620 km",
+      "orbitalPeriod": "285 Earth years",
+      "discoveryDate": "December 28, 2004"
+    },
+    {
+      "id": "13",
+      "name": "Makemake",
+      "category": "dwarf planet",
+      "image": "makemake.jpg",
+      "description": "A bright icy dwarf planet in the Kuiper Belt.",
+      "nameOrigin": "Named for a creator god from Rapa Nui mythology.",
+      "mass": "About 3.1 x 10^21 kg",
+      "radius": "715 km",
+      "orbitalPeriod": "305 Earth years",
+      "discoveryDate": "March 31, 2005"
+    },
+    {
+      "id": "14",
+      "name": "Eris",
+      "category": "dwarf planet",
+      "image": "eris.jpg",
+      "description": "One of the largest known dwarf planets in the solar system.",
+      "nameOrigin": "Named for the Greek goddess of discord.",
+      "mass": "1.646 x 10^22 kg",
+      "radius": "1,163 km",
+      "orbitalPeriod": "557 Earth years",
+      "discoveryDate": "January 5, 2005"
+    }
+  ]
+}

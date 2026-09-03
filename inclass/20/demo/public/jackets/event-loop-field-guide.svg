@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="440" viewBox="0 0 300 440" role="img" aria-labelledby="title desc">
+  <title id="title">The Event Loop Field Guide book jacket</title>
+  <desc id="desc">A blue book jacket with curved arrows around small browser windows.</desc>
+  <rect width="300" height="440" rx="10" fill="#1d4ed8"/>
+  <rect x="72" y="98" width="156" height="96" rx="8" fill="#dbeafe"/>
+  <rect x="88" y="124" width="124" height="18" rx="4" fill="#1e3a8a"/>
+  <rect x="88" y="154" width="80" height="18" rx="4" fill="#1e3a8a"/>
+  <path d="M82 232c42 42 94 42 136 0" fill="none" stroke="#f8fafc" stroke-width="10" stroke-linecap="round"/>
+  <path d="M219 232l-34-4 18 29z" fill="#f8fafc"/>
+  <text x="150" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">The Event Loop</text>
+  <text x="150" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Field Guide</text>
+</svg>

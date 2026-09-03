@@ -1,0 +1,14 @@
+{
+  "workshops": [
+    {
+      "id": "1",
+      "title": "Bike Repair Basics",
+      "seats": 12
+    },
+    {
+      "id": "2",
+      "title": "Intro to Web Components",
+      "seats": 18
+    }
+  ]
+}

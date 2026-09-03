@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./img/javascript-logo.png" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Listeners</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-header">
+      <h1 id="page-title">Event Listeners</h1>
+      <nav class="page-nav" aria-label="Demo pages">
+        <a href="./index.html" aria-current="page">Core Samples</a>
+        <a href="./panorama.html">Panorama Panels</a>
+      </nav>
+    </div>
+    <p class="tagline">Click, hover, type, and select items to trigger UI updates.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="sec-click">Click Events</h2>
+      <button id="btn-toggle">Toggle Highlight</button>
+      <button id="btn-message">Change Message</button>
+      <p id="message">Initial message...</p>
+    </section>
+
+    <section>
+      <h2 id="sec-hover">Mouseover / Mouseout</h2>
+      <div id="hover-card" class="card">
+        <img src="./img/javascript-logo.png" alt="JavaScript logo" width="180" height="180" />
+        <p class="hint">Hover over this card</p>
+        <p id="hover-status" class="muted">Status: none</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="sec-key">Keydown</h2>
+      <p class="muted">Type anywhere on the page.</p>
+      <div id="key-output" class="output">Last key: (none)</div>
+    </section>
+
+    <section>
+      <h2 id="sec-delegate">Event Delegation</h2>
+      <ul id="list" class="list">
+        <li data-id="1"><i>Item</i> <b>01</b></li>
+        <li data-id="2"><i>Item</i> <b>02</b></li>
+        <li data-id="3"><i>Item</i> <b>03</b></li>
+      </ul>
+      <div id="selection" class="output">Selected: (none)</div>
+    </section>
+
+    <section>
+      <h2 id="sec-propagation">Propagation</h2>
+      <div id="outer-box" class="propagation-box">
+        Outer box
+        <div id="middle-box" class="propagation-box">
+          Middle box
+          <button id="inner-button">Inner button</button>
+        </div>
+      </div>
+      <button id="btn-clear-log">Clear Log</button>
+      <ol id="event-log" class="output event-log"></ol>
+    </section>
+  </main>
+
+  <footer>
+    <small id="footer-note">&copy;2026 SDEV-1150</small>
+  </footer>
+</body>
+
+</html>

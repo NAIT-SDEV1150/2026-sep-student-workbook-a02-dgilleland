@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Dev Tools</title>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Using the Browser Dev Tools</h1>
+    <p>Below are two copies of the same image from the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img" target="_blank">MDN <code>img</code> docs</a>. Why does one load and the other show as a broken image? That's <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS" target="_blank"><strong>CORS</strong> (Cross-Origin Resource Sharing)</a>.</p>
+    <table>
+      <tr>
+        <td>
+          <!-- Usually loads: normal image request, not CORS-enabled -->
+          <img
+            src="https://developer.mozilla.org/shared-assets/images/examples/grapefruit-slice.jpg"
+            alt="Grapefruit slice"
+            width="250"
+          />
+        </td>
+        <td>
+          <!-- Should fail: credentialed CORS is not allowed by MDN's image response -->
+          <img crossorigin="use-credentials"
+            src="https://developer.mozilla.org/shared-assets/images/examples/grapefruit-slice.jpg"
+            alt="Grapefruit slice"
+            width="250"
+          />
+        </td>
+      </tr>
+    </table>
+    <footer>
+      <p>Styling from <a href="https://njxui.dev/" target="_blank" rel="noopener noreferrer">njX UI</a></p>
+    </footer>
+  </main>
+</body>  
+</html>

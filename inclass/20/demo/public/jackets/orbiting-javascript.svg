@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="440" viewBox="0 0 300 440" role="img" aria-labelledby="title desc">
+  <title id="title">Orbiting JavaScript book jacket</title>
+  <desc id="desc">A teal book jacket with a small orbit shape around the letters JS.</desc>
+  <rect width="300" height="440" rx="10" fill="#0f766e"/>
+  <circle cx="150" cy="170" r="74" fill="none" stroke="#ccfbf1" stroke-width="8"/>
+  <ellipse cx="150" cy="170" rx="112" ry="36" fill="none" stroke="#facc15" stroke-width="8" transform="rotate(-18 150 170)"/>
+  <text x="150" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#ffffff">JS</text>
+  <text x="150" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Orbiting</text>
+  <text x="150" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">JavaScript</text>
+</svg>

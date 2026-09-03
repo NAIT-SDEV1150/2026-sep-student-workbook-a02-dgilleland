@@ -1,0 +1,21 @@
+# api-smoke-test.http
+
+### GET all bodies
+GET http://localhost:3000/bodies
+Accept: application/json
+
+### GET one body
+GET http://localhost:3000/bodies/1
+Accept: application/json
+
+### Optional POST smoke test
+# POST http://localhost:3000/bodies
+# Content-Type: application/json
+#
+# {
+#   "name": "Proxima Centauri",
+#   "category": "star",
+#   "image": "sun.jpg",
+#   "description": "The closest known star to the Sun.",
+#   "orbitalPeriod": "Not applicable"
+# }

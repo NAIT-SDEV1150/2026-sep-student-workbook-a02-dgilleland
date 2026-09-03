@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 21 - Consuming REST API Endpoints</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Book Catalog API</h1>
+    <p>Combine JSON, markdown, and image responses from a local REST API.</p>
+  </header>
+
+  <main class="app-shell">
+    <section aria-labelledby="catalog-title" class="catalog-panel">
+      <div class="section-heading">
+        <h2 id="catalog-title">Catalog</h2>
+        <button type="button" id="load-catalog">Reload</button>
+      </div>
+      <p id="catalog-status" class="status" data-status="info">Waiting to load catalog data.</p>
+      <ul id="book-list" class="book-list"></ul>
+    </section>
+
+    <section aria-labelledby="details-title" class="detail-panel">
+      <h2 id="details-title">Book Details</h2>
+      <p id="detail-status" class="status" data-status="info">Select a book to view details.</p>
+
+      <div class="book-detail">
+        <img id="jacket-image" class="jacket" alt="">
+        <div>
+          <h3 id="book-title">No book selected</h3>
+          <p id="book-meta" class="muted"></p>
+          <p id="author-bio"></p>
+        </div>
+      </div>
+
+      <article aria-labelledby="summary-title" class="summary-panel">
+        <h3 id="summary-title">Summary</h3>
+        <div id="summary-content" class="markdown-output"></div>
+      </article>
+
+      <section aria-labelledby="reviews-title" class="reviews-panel">
+        <h3 id="reviews-title">Reviews</h3>
+        <ul id="review-list" class="review-list"></ul>
+
+        <form id="add-review" class="review-form">
+          <h4>Add Review</h4>
+          <label>
+            Reviewer
+            <input type="text" name="reviewer" required>
+          </label>
+          <label>
+            Rating
+            <input type="number" name="rating" min="1" max="5" required>
+          </label>
+          <label>
+            Comment
+            <textarea name="comment" rows="3" required></textarea>
+          </label>
+          <button type="submit">Add Review</button>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>
