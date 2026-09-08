@@ -1,0 +1,19 @@
+{
+  "name": "lesson-06-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "tamperCheck": {
+    "file": "demo.spec.js",
+    "check": "f6e79446731f4aff75368f3c1897aa6c0ab7a88795fbf27c24762f1299549b19"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "vitest": "^4.1.5"
+  }
+}
