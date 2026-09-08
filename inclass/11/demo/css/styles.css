@@ -1,0 +1,42 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+
+  aside {
+    float: right;
+    padding-left: 1.2em;
+    width: 25%;
+
+    blockquote > img {
+        display: block;
+    }
+    
+    q::before, q::after {
+        font-size: 1.4em;
+        vertical-align: baseline;
+    }
+
+    cite {
+        display: block;
+        text-align: right;
+    }
+    cite:before {
+        content: '– ';
+    }
+  }
+}
+
+footer {
+  margin-top: auto;
+  background-color: var(--pico-background-color);
+  color: var(--pico-color);
+
+  ul > li {
+    list-style: none;
+  }
+}
