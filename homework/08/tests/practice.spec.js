@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, afterEach } from 'vitest';
-import { calculateLetterGrade, calculateGradePoint, isValidLetterGrade, isValidPercent } from '../homework';
-import * as homework from '../homework';
+import { calculateLetterGrade, calculateGradePoint, isValidLetterGrade, isValidPercent } from '../practice';
+import * as homework from '../practice';
 
 describe('Homework 08', () => {
   afterEach(() => {

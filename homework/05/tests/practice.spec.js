@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { soh, cah, toa, calculateLoan, fromSeconds } from '../homework';
+import { soh, cah, toa, calculateLoan, fromSeconds } from '../practice';
 
 describe('Homework 05', () => {
   it.each([
