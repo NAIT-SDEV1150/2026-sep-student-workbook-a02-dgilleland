@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, afterEach } from 'vitest';
-import { calculateLetterGrade, calculateGradePoint, isValidLetterGrade, isValidPercent } from '../homework';
-import * as homework from '../homework';
+import { calculateLetterGrade, calculateGradePoint, isValidLetterGrade, isValidPercent } from '../practice';
+import * as homework from '../practice';
 
 describe('Homework 08', () => {
   afterEach(() => {
@@ -41,7 +41,7 @@ describe('Homework 08', () => {
         This is not really a strong test in any real-world sense. It *can* be "faked" to get it to pass, so it's more of an "honors system" test. I am expecting the student to actually write the switch statement, not "pretend" to.
     */
     const actual = calculateGradePoint.toString();
-    expect(actual).contains('select');
+    expect(actual).contains('switch');
     const regex = new RegExp(`\\bcase\\b`, "g");
     const cases = actual.match(regex);
     expect(cases, 'expected the case keyword to be present').not.toBeNull();
