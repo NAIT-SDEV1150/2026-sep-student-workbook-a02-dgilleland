@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 22 - Styling Course Info Cards</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <p class="eyebrow">SDEV course catalogue</p>
+    <h1>Styling Course Info Cards</h1>
+    <p>Use Shadow DOM styling hooks to keep course cards encapsulated but customizable.</p>
+    <div class="actions">
+      <button type="button" id="theme-toggle">Use Dark Theme</button>
+      <button type="button" id="credits-toggle">Change Featured Credits</button>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="declarative-title">
+      <h2 id="declarative-title">Declarative Cards</h2>
+      <div class="card-grid">
+        <course-info id="credits-demo" credits="3" variant="featured">
+          <span slot="course-code">SDEV1000</span>
+          <span slot="course-name">Logic and Problem-Solving</span>
+          <span slot="requisites">This course is available to students in the Game Development - Game Programming and Software Development programs.</span>
+          <span slot="description">Logic and problem-solving are crucial competencies for software developers as they underpin the creation of efficient and functional code.</span>
+        </course-info>
+
+        <course-info credits="3">
+          <span slot="course-code">SDEV1001</span>
+          <span slot="course-name">Programming Fundamentals</span>
+          <span slot="requisites">This course is available to students in the Game Development - Game Programming, IT Business Analysis, and Software Development programs.</span>
+          <span slot="description">Students will learn the fundamentals of programming, creative problem-solving, and logical thinking through hands-on exercises.</span>
+        </course-info>
+      </div>
+    </section>
+
+    <section aria-labelledby="programmatic-title">
+      <h2 id="programmatic-title">Programmatic Cards</h2>
+      <div id="programmatic-courses" class="card-grid"></div>
+    </section>
+  </main>
+</body>
+
+</html>

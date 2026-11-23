@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+  --page-bg: #eef2f7;
+  --surface: #ffffff;
+  --text: #172033;
+  --muted: #5f6f84;
+  --accent: #0f766e;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #172033;
+  --surface: #243047;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --accent: #38bdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+header,
+main {
+  max-width: 980px;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  color: var(--muted);
+}
+
+button {
+  cursor: pointer;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+user-card {
+  --user-card-bg: var(--surface);
+  --user-card-color: var(--text);
+  --user-card-muted: var(--muted);
+  --user-card-accent: var(--accent);
+}
+

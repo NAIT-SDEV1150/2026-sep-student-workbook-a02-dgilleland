@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #172033;
+  background: #f7f9fc;
+}
+
+header {
+  padding: 2rem;
+  border-bottom: 1px solid #d7dee8;
+  background: #ffffff;
+}
+
+.status {
+  font-weight: 700;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
