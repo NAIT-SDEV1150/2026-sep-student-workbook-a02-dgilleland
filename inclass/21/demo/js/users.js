@@ -1,0 +1,42 @@
+export const users = [
+  {
+    id: '2788dcba-54f4-4bc6-9233-a5da11845daa',
+    name: 'Clarence James',
+    email: 'clarence.james@example.com',
+    avatar: 'assets/avatars/clarence-james.jpg',
+    location: 'Sunshine Coast, Australia',
+    about: 'Enjoys helping teams turn rough ideas into clear, working prototypes.',
+  },
+  {
+    id: 'aa3aca4b-d139-4ae7-bd65-1d601cdaf3f2',
+    name: 'Brayden Silva',
+    email: 'brayden.silva@example.com',
+    avatar: 'assets/avatars/brayden-silva.jpg',
+    location: 'Saint Paul, United States',
+    about: 'Likes practical tools, clean interfaces, and small improvements that save time.',
+  },
+  {
+    id: '42578935-565a-4863-aa17-0ebfa107b78c',
+    name: 'Sarah Armstrong',
+    email: 'sarah.armstrong@example.com',
+    avatar: 'assets/avatars/sarah-armstrong.jpg',
+    location: 'Lichfield, United Kingdom',
+    about: 'Keeps projects organized and enjoys making technical details easier to understand.',
+  },
+  {
+    id: 'bb1772b0-0ba5-4b8f-b180-3a8077dc629d',
+    name: 'Elizabeth Claire',
+    email: 'elizabeth.claire@example.com',
+    avatar: 'assets/avatars/elizabeth-claire.jpg',
+    location: 'Vanier, Canada',
+    about: 'Builds friendly workflows and likes turning feedback into polished results.',
+  },
+  {
+    id: '0bccb440-db5c-4520-b38b-fb457c79d279',
+    name: 'Clayton Oliver',
+    email: 'clayton.oliver@example.com',
+    avatar: 'assets/avatars/clayton-oliver.jpg',
+    location: 'Durham, United Kingdom',
+    about: 'Enjoys debugging, documenting decisions, and keeping shared code readable.',
+  },
+];

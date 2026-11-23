@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 22 - Intro to Custom Elements</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Intro to Custom Elements</h1>
+    <p>Build reusable user cards with vanilla JavaScript Web Components.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="declarative-title">
+      <h2 id="declarative-title">Declarative Cards</h2>
+      <div class="card-grid">
+        <user-card avatar="assets/avatars/clarence-james.jpg">
+          <span slot="name">Clarence James</span>
+          <span slot="description">Enjoys helping teams turn rough ideas into clear, working prototypes.</span>
+        </user-card>
+
+        <user-card avatar="assets/avatars/brayden-silva.jpg">
+          <span slot="name">Brayden Silva</span>
+          <span slot="description">Likes practical tools, clean interfaces, and small improvements that save time.</span>
+        </user-card>
+      </div>
+    </section>
+
+    <section aria-labelledby="programmatic-title">
+      <h2 id="programmatic-title">Programmatic Cards</h2>
+      <div id="programmatic-cards" class="card-grid"></div>
+    </section>
+  </main>
+</body>
+
+</html>

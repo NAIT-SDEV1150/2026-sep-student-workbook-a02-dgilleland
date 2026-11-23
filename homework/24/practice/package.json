@@ -1,0 +1,17 @@
+{
+  "name": "lesson-24-practice-solution",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Finished solution for SDEV-1150 self-study 24: Test-Driven-Development",
+  "scripts": {
+    "test": "vitest",
+    "test:once": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@vitest/coverage-v8": "4.1.6",
+    "vitest": "4.1.6"
+  }
+}

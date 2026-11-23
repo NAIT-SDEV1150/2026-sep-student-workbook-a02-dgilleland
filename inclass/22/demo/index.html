@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 23 - Styling Custom Elements</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Styling Custom Elements</h1>
+    <p>Use Shadow DOM style hooks to keep components encapsulated but customizable.</p>
+    <button type="button" id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <main class="card-grid">
+    <user-card avatar="assets/avatars/clarence-james.jpg">
+      <span slot="name">Clarence James</span>
+      <span slot="description">Enjoys helping teams turn rough ideas into clear, working prototypes.</span>
+    </user-card>
+
+    <user-card avatar="assets/avatars/brayden-silva.jpg" variant="featured">
+      <span slot="name">Brayden Silva</span>
+      <span slot="description">Likes practical tools, clean interfaces, and small improvements that save time.</span>
+    </user-card>
+
+    <user-card id="avatar-demo" avatar="assets/avatars/sarah-armstrong.jpg">
+      <span slot="name">Sarah Armstrong</span>
+      <span slot="description">Keeps projects organized and enjoys making technical details easier to understand.</span>
+    </user-card>
+  </main>
+</body>
+
+</html>

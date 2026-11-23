@@ -1,0 +1,22 @@
+{
+  "name": "lesson-25-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Starter demo for SDEV-1150 Lesson 25: Testing Custom Elements",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:browser": "vitest --config vitest.browser.config.js --run"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@vitest/browser-preview": "4.1.6",
+    "jsdom": "29.1.1",
+    "msw": "2.14.6",
+    "vite": "8.0.13",
+    "vitest": "4.1.6"
+  }
+}

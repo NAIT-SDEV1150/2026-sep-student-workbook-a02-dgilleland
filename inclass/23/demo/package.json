@@ -1,0 +1,19 @@
+{
+  "name": "lesson-24-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Starter demo for SDEV-1150 Lesson 24: Custom Element Lifecycle and State Management",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "jsdom": "29.1.1",
+    "vite": "8.0.13",
+    "vitest": "4.1.7"
+  }
+}

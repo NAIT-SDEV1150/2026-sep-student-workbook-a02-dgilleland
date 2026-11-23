@@ -1,0 +1,19 @@
+{
+  "name": "homework-21-custom-element-practice",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Starter practice for SDEV-1150 Homework 21: Custom Elements",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "jsdom": "29.1.1",
+    "vite": "8.0.13",
+    "vitest": "4.1.7"
+  }
+}
